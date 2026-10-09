@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Arisha Aslam | Mathematics, Data Science and Machine Learning Portfolio">
+<title>Arisha Aslam | Data Science & Machine Learning</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="logo" href="#home">Arisha<span>.</span></a>
+    <button class="menu" aria-label="Menu">☰</button>
+    <div class="links">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#dashboard">Dashboard</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="glow"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="eyebrow">MATHEMATICS • DATA SCIENCE • MACHINE LEARNING</p>
+      <h1>Turning mathematical ideas into <span>practical solutions.</span></h1>
+      <p class="intro">I am Arisha Aslam, a mathematics-focused learner developing practical projects in Data Science, Machine Learning, Python, Statistics and Web Development.</p>
+      <div class="buttons"><a class="btn primary" href="#projects">View Projects</a><a class="btn" href="#contact">Contact Me</a></div>
+      <div class="stats"><div><b>Python</b><small>Data & Modeling</small></div><div><b>ML</b><small>Applied Projects</small></div><div><b>Math</b><small>Analytical Thinking</small></div></div>
+    </div>
+    <div class="profile-card">
+      <div class="avatar">AA</div>
+      <p class="mini">CURRENT FOCUS</p><h2>Machine Learning & Data Science</h2>
+      <p>Predictive modeling, statistics, optimization, data analysis and practical technology solutions.</p>
+      <div class="tags"><span>Python</span><span>Machine Learning</span><span>Statistics</span><span>Web</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="two-col">
+    <div><p class="eyebrow">ABOUT ME</p><h2>Mathematics with a practical technology mindset.</h2></div>
+    <div>
+      <p class="lead">My academic background in Mathematics and Physics has developed a strong foundation in analytical thinking, problem solving and quantitative reasoning. I am currently pursuing a Bachelor's in Mathematics while developing practical skills in Data Science, Machine Learning, Python and Web Development.</p>
+      <p>I enjoy connecting mathematical concepts with real-world data problems and building solutions that are understandable, useful and measurable.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section dark">
+<div class="wrap"><p class="eyebrow">SKILLS</p><h2>What I work with</h2>
+<div class="grid">
+  <article><b>∑</b><h3>Mathematics</h3><p>Mathematical modeling, optimization, analytical reasoning and problem solving.</p></article>
+  <article><b>⌘</b><h3>Python</h3><p>Data handling, machine learning workflows and practical programming projects.</p></article>
+  <article><b>◈</b><h3>Machine Learning</h3><p>Regression, preprocessing, model evaluation and predictive systems.</p></article>
+  <article><b>▥</b><h3>Data Science</h3><p>Data analysis, statistics, visualization and data-driven insights.</p></article>
+  <article><b>λ</b><h3>Statistics</h3><p>Probability, expected value, variance and statistical reasoning.</p></article>
+  <article><b>&lt;/&gt;</b><h3>Web Development</h3><p>Responsive HTML, CSS and JavaScript interfaces.</p></article>
+</div></div>
+</section>
+
+<section id="projects" class="section">
+<div class="wrap"><p class="eyebrow">FEATURED PROJECT</p>
+<div class="project-head"><div><h2>AI-Driven Expiry & Waste Risk Prediction System</h2><p>Industrial Machine Learning & Supply Chain Automation</p></div><span>Prototype</span></div>
+<div class="project">
+<div><p>A machine-learning prototype designed to estimate food inventory waste risk using product category, storage temperature, humidity, shelf life and storage duration. The proposed system supports proactive FEFO decisions.</p>
+<div class="facts"><div><b>Model</b><span>Random Forest Regressor</span></div><div><b>Target</b><span>Waste Risk Score (0–100%)</span></div><div><b>Pipeline</b><span>Preprocessing → Training → Evaluation → Prediction</span></div><div><b>Deployment</b><span>Streamlit dashboard</span></div></div></div>
+<div class="side"><h4>Key Inputs</h4><ul><li>Storage temperature</li><li>Storage humidity</li><li>Shelf-life days</li><li>Days in storage</li><li>Product category</li><li>Item name</li></ul><small>Target industry: S.M. Food Makers, Multan, Pakistan.</small></div>
+</div></div>
+</section>
+
+<section id="dashboard" class="section dark">
+<div class="wrap"><p class="eyebrow">INTERACTIVE PROJECT DEMO</p>
+<div class="project-head"><div><h2>Expiry & Waste Risk Dashboard</h2><p>Change the inputs to see the prototype risk indicators update.</p></div><strong id="badge" class="badge">MEDIUM RISK</strong></div>
+<div class="dashboard">
+<div class="controls">
+<label>Product Category<select id="category"><option>Dairy</option><option>Fats & Oils</option><option>Chemicals</option><option>Sweeteners</option><option>Grains</option></select></label>
+<label>Storage Temperature <output id="tv">8°C</output><input id="temp" type="range" min="2" max="42" value="8" step=".5"></label>
+<label>Humidity <output id="hv">60%</output><input id="hum" type="range" min="20" max="90" value="60"></label>
+<label>Days in Storage <output id="dv">30 days</output><input id="days" type="range" min="1" max="365" value="30"></label>
+<label>Shelf Life <output id="sv">90 days</output><input id="shelf" type="range" min="7" max="730" value="90"></label>
+</div>
+<div class="metrics">
+<div><small>Waste Risk Score</small><strong id="risk">—</strong><div class="meter"><i id="meter"></i></div></div>
+<div><small>Projected Waste</small><strong id="waste">—</strong><em>relative estimate</em></div>
+<div><small>Priority</small><strong id="priority">—</strong><em>recommended attention</em></div>
+</div>
+<div class="matrix"><div class="matrix-title">Freshness Decay Matrix</div><div id="bars" class="bars"></div><div class="axis"><span>Low Risk</span><span>Medium</span><span>High Risk</span></div></div>
+</div>
+<p class="note">This is an interactive website prototype. The production version can connect these controls directly to the trained Random Forest model and real inventory dataset.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap"><p class="eyebrow">WORKFLOW</p><h2>From inventory data to an actionable decision</h2>
+<div class="workflow"><div><b>01</b><h3>Collect</h3><p>Capture product, environmental and storage information.</p></div><div><b>02</b><h3>Prepare</h3><p>Encode categories and prepare numerical features.</p></div><div><b>03</b><h3>Predict</h3><p>Estimate waste risk with a regression model.</p></div><div><b>04</b><h3>Act</h3><p>Prioritize risky batches and support FEFO decisions.</p></div></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap contact-box"><div><p class="eyebrow">CONTACT</p><h2>Let's connect.</h2><p>For academic projects, data science work and technology collaborations.</p></div>
+<div class="contact-links"><a href="mailto:arishaaslam396@gmail.com"><small>Email</small><b>arishaaslam396@gmail.com</b></a><a href="tel:+923061964105"><small>Phone</small><b>+92 306 1964105</b></a></div></div></section>
+<footer><span>© 2026 Arisha Aslam</span><span>Mathematics • Data Science • Machine Learning</span></footer>
+<script src="script.js"></script>
+</body></html>
